@@ -1,10 +1,10 @@
 function toCase(text) {
   // write your code here
-	if(text=="")
+	if(/^[A-Za-z]+$/.test(text))
 	{
-		return "-";
+		return text.toLowerCase()+"-"+text.toUpperCase();
     }
-	return text.toLowerCase()+"-"+text.toUpperCase();
+	return "";
 }
 
 // DO not change the code below
