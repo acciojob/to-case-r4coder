@@ -1,5 +1,9 @@
 function toCase(text) {
   // write your code here
+	if(text=="")
+	{
+		return "-";
+    }
 	return text.toLowerCase()+"-"+text.toUpperCase();
 }
 
